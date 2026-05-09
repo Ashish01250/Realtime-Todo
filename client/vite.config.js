@@ -9,7 +9,7 @@ export default defineConfig({
     host: "0.0.0.0",
     port: process.env.PORT || 5173,
     allowedHosts: [
-      "upbeat-abundance-production-027b.up.railway.app",
+      "realtime-todo.up.railway.app",
     ],
   },
 });

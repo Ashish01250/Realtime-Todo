@@ -32,7 +32,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://upbeat-abundance-production-027b.up.railway.app"
+      "realtime-todo.up.railway.app"
     ],
     credentials: true,
   })
