@@ -32,7 +32,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "realtime-todo.up.railway.app"
+      "https://realtime-todo.up.railway.app"
     ],
     credentials: true,
   })
