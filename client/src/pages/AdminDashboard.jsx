@@ -69,7 +69,7 @@ const AdminDashboard = () => {
       );
 
       const res = await axios.get(
-        "http://localhost:8080/api/projects",
+        `${import.meta.env.VITE_API_URL}/api/projects`,
         {
           headers: {
             token: `Bearer ${user.token}`,
@@ -99,7 +99,7 @@ const AdminDashboard = () => {
       );
 
       const res = await axios.get(
-        "http://localhost:8080/api/tasks",
+        `${import.meta.env.VITE_API_URL}/api/tasks`,
         {
           headers: {
             token: `Bearer ${user.token}`,
@@ -142,7 +142,7 @@ const AdminDashboard = () => {
         );
 
         await axios.post(
-          "http://localhost:8080/api/projects",
+          `${import.meta.env.VITE_API_URL}/api/projects`,
           {
             name: projectName,
             description:
