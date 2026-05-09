@@ -30,7 +30,10 @@ connectDB();
 // ================= MIDDLEWARE =================
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: [
+      "http://localhost:5173",
+      "https://upbeat-abundance-production-027b.up.railway.app"
+    ],
     credentials: true,
   })
 );
